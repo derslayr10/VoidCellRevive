@@ -1,6 +1,6 @@
 {
     "name": "VoidCellRevive",
-    "version_number": "1.0.0",
+    "version_number": "1.0.1",
     "website_url": "https://github.com/derslayr10/VoidCellRevive",
     "description": "A mod to revive players at the start of each round of the Void Arena",
     "dependencies": [

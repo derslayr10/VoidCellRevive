@@ -14,7 +14,7 @@ namespace VoidCellRevive
 
         public const string ModGuid = "com.Derslayr.VoidCellRevive";
         public const string ModName = "VoidCellRevive";
-        public const string ModVer = "1.0.0";
+        public const string ModVer = "1.0.1";
 
         private void ReviveDeadPlayers()
         {
@@ -46,6 +46,7 @@ namespace VoidCellRevive
             On.RoR2.ArenaMissionController.BeginRound += (orig, self) => {
 
                 ReviveDeadPlayers();
+                orig(self);
 
             };
 
