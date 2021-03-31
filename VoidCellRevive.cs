@@ -1,12 +1,7 @@
 ﻿using BepInEx;
-using R2API;
-using R2API.Utils;
-using UnityEngine;
 namespace VoidCellRevive
 {
 
-    [BepInDependency(R2API.R2API.PluginGUID, R2API.R2API.PluginVersion)]
-    [NetworkCompatibility(CompatibilityLevel.EveryoneMustHaveMod, VersionStrictness.EveryoneNeedSameModVersion)]
     [BepInPlugin(ModGuid, ModName, ModVer)]
 
     public class PlayerBotsItems : BaseUnityPlugin
@@ -14,7 +9,7 @@ namespace VoidCellRevive
 
         public const string ModGuid = "com.Derslayr.VoidCellRevive";
         public const string ModName = "VoidCellRevive";
-        public const string ModVer = "1.0.1";
+        public const string ModVer = "1.0.2";
 
         private void ReviveDeadPlayers()
         {
